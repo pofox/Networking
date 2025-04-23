@@ -51,6 +51,7 @@ namespace RPS
         public void TargetSetEndResult(EndResult result)
         {
             gameUI.DisplayEndResult(result);
+            CmdUpdatePlayerMove(PlayerMove.None);
         }
 
         #endregion

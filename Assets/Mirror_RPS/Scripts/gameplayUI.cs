@@ -62,6 +62,7 @@ namespace RPS
         }
         public void DisplayEndResult(EndResult result)
         {
+            Debug.Log("End Result: " + result.ToString());
             txt_Result.text = result.ToString();
             popup.SetTrigger("Show");
             Invoke("ResetButtons", 2f);

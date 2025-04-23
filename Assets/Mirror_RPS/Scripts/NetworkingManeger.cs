@@ -77,8 +77,10 @@ namespace RPS
             //  0 1 , 1 2 , 2 0 -> 2 // x (x+1)%3 -> 2 -> (x-(x+1))%3=2
             //  a b => a-b= {-1,0,1} => 0 = draw , 1 = p1 win , 2 = p1 lose => x+1 -> 1 draw 2 win 3 lose
             //  (p1Move - p2Move)%3+1 = {1,2,3} => 1 = draw , 2 = p1 win , 3 = p1 lose
-            EndResult p1Result = (EndResult)(((int)p1Move - (int)p2Move) % 3 + 1);
-            EndResult p2Result = (EndResult)(((int)p2Move - (int)p1Move) % 3 + 1);
+            EndResult p1Result = (EndResult)(((int)p1Move - (int)p2Move + 3) % 3 + 1);
+            EndResult p2Result = (EndResult)(((int)p2Move - (int)p1Move + 3) % 3 + 1);
+            Debug.Log($"Player 1 Move: {p1Move}, Player 2 Move: {p2Move}");
+            Debug.Log($"Player 1 Result: {p1Result}, Player 2 Result: {p2Result}");
             players[0].UpdateScore(p1Result == EndResult.Win);
             players[1].UpdateScore(p2Result == EndResult.Win);
             players[0].TargetSetEndResult(p1Result);

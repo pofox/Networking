@@ -215,11 +215,11 @@ MonoBehaviour:
   txt_localplayerScore: {fileID: 533413536}
   txt_opponentName: {fileID: 1098854594}
   txt_opponentScore: {fileID: 1858110601}
-  btn_Rock: {fileID: 0}
-  btn_Paper: {fileID: 0}
-  btn_Scissors: {fileID: 0}
-  popup: {fileID: 0}
-  txt_Result: {fileID: 0}
+  btn_Rock: {fileID: 719797208}
+  btn_Paper: {fileID: 592316547}
+  btn_Scissors: {fileID: 352583578}
+  popup: {fileID: 1744526683}
+  txt_Result: {fileID: 614193950}
 --- !u!1 &352583576
 GameObject:
   m_ObjectHideFlags: 0
