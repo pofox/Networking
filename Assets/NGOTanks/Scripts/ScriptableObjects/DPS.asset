@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced83e1ca18124a4da3e7b385d4ca805, type: 3}
+  m_Name: DPS
+  m_EditorClassIdentifier: 
+  pClass: 1
+  maxHealth: 100
+  movingSpeed: 4
+  canonSpeed: 120
+  damage: 18
+  bulletSpeed: 60
+  icon: {fileID: 11400000, guid: f35c0f3ca05c3e44abae06e835f5304b, type: 2}
+  abilityPrefab: {fileID: 7250989139658238389, guid: 120aaadda880bd242a790b41cb24220b, type: 3}
+  abilityDamage: 30
+  stayTime: 5
+  effectTime: 0
+  cooldown: 10

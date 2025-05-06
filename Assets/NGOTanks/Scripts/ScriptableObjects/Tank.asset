@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced83e1ca18124a4da3e7b385d4ca805, type: 3}
+  m_Name: Tank
+  m_EditorClassIdentifier: 
+  pClass: 0
+  maxHealth: 250
+  movingSpeed: 2
+  canonSpeed: 90
+  damage: 10
+  bulletSpeed: 40
+  icon: {fileID: 11400000, guid: 76226e4ec97c3804fa19257f9899a71e, type: 2}
+  abilityPrefab: {fileID: 2391296999161303741, guid: 9262619792e81c649818829a0d98e428, type: 3}
+  abilityDamage: 10
+  stayTime: 5
+  effectTime: 0.5
+  cooldown: 10

@@ -33,6 +33,7 @@ namespace NGOTanks
             if (!NetworkingManager.Instance.IsServer) return;
             // Get the next spawn position
             NetworkObject netPlayer = Instantiate(PlayerPrefab, SpawnPositions[currentSpawnIndex]);
+            netPlayer.transform.localScale = Vector3.one;
             netPlayer.SpawnAsPlayerObject(clientId);
 
             currentSpawnIndex++;
@@ -43,7 +44,10 @@ namespace NGOTanks
         {
             if (NetworkingManager.Instance)
             {
-                NetworkingManager.Instance.SceneManager.OnLoadComplete -= NetSceneMgr_LoadCompleted;
+                if(NetworkingManager.Instance.SceneManager != null)
+                {
+                    NetworkingManager.Instance.SceneManager.OnLoadComplete -= NetSceneMgr_LoadCompleted;
+                }
             }
         }
     }

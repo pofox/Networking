@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/NGOTanks/Scenes/MainMeun.unity
+    path: Assets/NGOTanks/Scenes/MainMenu.unity
     guid: d15276970ac3d994e86845a572845aac
   - enabled: 1
     path: Assets/NGOTanks/Scenes/Gameplay.unity
