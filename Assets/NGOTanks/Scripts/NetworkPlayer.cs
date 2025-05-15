@@ -68,11 +68,6 @@ namespace NGOTanks
             NetworkingManager.Instance.AddPlayer(this);
         }
 
-        private void OnHealthChanged(int previousValue, int newValue)
-        {
-            healthSlider.value = 1.0f * curruntHealth.Value / playerClass.maxHealth;
-        }
-
         // Update is called once per frame
         void Update()
         {
@@ -152,13 +147,6 @@ namespace NGOTanks
         [ServerRpc]
         public void SetPlayerDataServerRpc(PlayerData _playerData)
         {
-            // Check if the name is valid
-            if (string.IsNullOrEmpty(name))
-            {
-                Debug.LogError("Player name cannot be empty");
-                return;
-            }
-            // Set the player name
             playerData.Value = _playerData;
         }
         [ServerRpc]
@@ -279,6 +267,11 @@ namespace NGOTanks
         private void OnPlayerDataChanged(PlayerData previousValue, PlayerData newValue)
         {
             SetPlayerProberties();
+        }
+
+        private void OnHealthChanged(int previousValue, int newValue)
+        {
+            healthSlider.value = 1.0f * curruntHealth.Value / playerClass.maxHealth;
         }
         #endregion
 
